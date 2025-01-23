@@ -1,17 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/dan9 favicon-32x32.png" type="image/x-icon">
-    <title>nens-home-page-proj-7</title>
-</head>
-<body>
-    <!-- nav -->
-<nav>
-    <div>
-        <img src="assets/dan.logo.svg" alt="nav-logo">
-    </div>
-</nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shotcut-icon" href="assets/dan9 favicon-32x32.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              grayishBlue: "hsl(233, 8%, 79%)",
+              SoftBrange: "hsl(35, 77%, 62%)",
+              SoftRed: "hsl(5, 85%, 63%)",
+              OffWhite: "hsl(36, 100%, 99%)",
+              DarkGrayishBlue: "hsl(236, 13%, 42%)",
+              VeryDarkBlue: "hsl(240, 100%, 5%)",
+            },
+            fontFamily: {
+              Inter: ['"Inter",serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <title>News || Page</title>
+  </head>
+  <body class="font-Inter">
+    <!-- Nav -->
+    <nav
+      class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px] flex justify-between items-center"
+    >
+      <div>
+        <img src="assets/dan.logo.svg" alt="logo" />
+      </div>
+      <!-- </nav-logo> -->
+      <ul class="hidden md:flex gap-12 font-[400] text-DarkGrayishBlue">
+        <li class="hover:text-SoftRed cursor-pointer">Home</li>
+        <li class="hover:text-SoftRed cursor-pointer">New</li>
+        <li class="hover:text-SoftRed cursor-pointer">Popular</li>
+        <li class="hover:text-SoftRed cursor-pointer">Treading</li>
+        <li class="hover:text-SoftRed cursor-pointer">categories</li>
+      </ul>
+      <!-- menu -->
+      <div class="md:hidden">
+        <img src="assets/dan8 icon-menu.svg" alt="menu-icon" />
+      </div>
+    </nav>
+    <!-- main -->
+    <main class="container mx-auto p-[20px] lg:py-[58px] lg:px-[140px]">
+      <!-- main section -->
+      <section class="lg:grid grid-cols-3 gap-12" >
+        <!-- section-1  -->
+        <section class="col-span-2">
+          <!-- div-1  -->
+          <div>
+            <img
+              src="assets/dan3 image-web-3-desktop.jpg"
+              alt="image-web-3-desktop"
+              class="hidden md:block"
+            />
+            <img
+              src="assets/Dan2 image-web-3-mobile.jpg"
+              alt="image-web-3-mobile"
+              class="md:hidden"
+            />
+          </div>
+          <!-- div-2  -->
+          <div class="lg:grid grid-cols-2">
+            <h1 class="font-[800] text-[36px] md:text-[50px]">The bright future ofweb 3.0</h1>
+            <div>
+              <p>
+                We dive into the next evolution of web that claims to put the
+                power of the platforms back into the hands of the people. But is
+                it really fulfilling its promise?
+              </p>
+              <button>READ MORE</button>
+            </div>
+
+          </div>
+        </section>
+        <!-- section-2  -->
+        <section class="bg-very">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos dolores cumque. Distinctio quos, vero officia aliquam dolorem sed asperiores rerum quis, deleniti corporis ipsa, commodi vel esse totam. Tenetur illo voluptate soluta deserunt sit alias voluptas porro, eveniet tempore facilis qui sed ullam numquam enim illum esse itaque! Debitis cupiditate dolore ducimus totam. Veritatis, fugiat temporibus molestiae deleniti saepe in! Neque corrupti quaerat officiis, eveniet ipsum minima at autem repellendus perferendis optio nam, dolor, quo alias inventore dignissimos quam fuga ad? Quas officiis voluptatem reiciendis incidunt obcaecati! Dignissimos ad deleniti rerum pariatur animi magni magnam autem dolorum nulla. Earum! </p>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
